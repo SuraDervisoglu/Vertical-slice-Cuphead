@@ -551,7 +551,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 1.4239205, y: -6.0479784, z: 0.0021822406}
-  m_LocalScale: {x: 17.957264, y: 1.171317, z: 1}
+  m_LocalScale: {x: 994.2, y: 1.171317, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1704477887}
@@ -616,6 +616,7 @@ GameObject:
   - component: {fileID: 831253551}
   - component: {fileID: 831253557}
   - component: {fileID: 831253556}
+  - component: {fileID: 831253558}
   m_Layer: 0
   m_Name: Cuphead-Run-n-gun-ezgif.com-gif-to-sprite-converter_0
   m_TagString: Untagged
@@ -646,6 +647,7 @@ MonoBehaviour:
   moveRight: 100
   jumpKey: 32
   dashKey: 304
+  lastDirection: 0
 --- !u!114 &831253552
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -818,6 +820,22 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
+--- !u!114 &831253558
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 831253550}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4ad7862bf55b91a4ea2b7f19dfb60526, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bulletPrefab: {fileID: 5060658329707292416, guid: 4f228f73548fa3c4786671be350e0e78, type: 3}
+  bulletSpawnPoint: {fileID: 831253555}
+  bulletSpeed: 10
+  fireRate: 7.5
 --- !u!1 &1704477886
 GameObject:
   m_ObjectHideFlags: 0
